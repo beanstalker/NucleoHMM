@@ -10,6 +10,10 @@
 		2E1183AB15D20B2700EB8172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1183AA15D20B2700EB8172 /* Foundation.framework */; };
 		2E1183AE15D20B2700EB8172 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1183AD15D20B2700EB8172 /* main.m */; };
 		2E1183B215D20B2700EB8172 /* Lab05.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E1183B115D20B2700EB8172 /* Lab05.1 */; };
+		2E1183BA15D20B6100EB8172 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1183B915D20B6100EB8172 /* State.m */; };
+		2E1183BD15D20D9000EB8172 /* DeletionState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1183BC15D20D9000EB8172 /* DeletionState.m */; };
+		2E1183C015D20DBB00EB8172 /* MatchState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1183BF15D20DBA00EB8172 /* MatchState.m */; };
+		2E1183C315D20DD400EB8172 /* InsertionState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1183C215D20DD400EB8172 /* InsertionState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +33,16 @@
 		2E1183A615D20B2700EB8172 /* Lab05 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab05; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1183AA15D20B2700EB8172 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2E1183AD15D20B2700EB8172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2E1183B015D20B2700EB8172 /* Lab05-Prefix.pch */ = {isa = PBXFileReference; path = "Lab05-Prefix.pch"; sourceTree = "<group>"; };
+		2E1183B015D20B2700EB8172 /* Lab05-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lab05-Prefix.pch"; sourceTree = "<group>"; };
 		2E1183B115D20B2700EB8172 /* Lab05.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Lab05.1; sourceTree = "<group>"; };
+		2E1183B815D20B6100EB8172 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		2E1183B915D20B6100EB8172 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		2E1183BB15D20D9000EB8172 /* DeletionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeletionState.h; sourceTree = "<group>"; };
+		2E1183BC15D20D9000EB8172 /* DeletionState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeletionState.m; sourceTree = "<group>"; };
+		2E1183BE15D20DBA00EB8172 /* MatchState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchState.h; sourceTree = "<group>"; };
+		2E1183BF15D20DBA00EB8172 /* MatchState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchState.m; sourceTree = "<group>"; };
+		2E1183C115D20DD400EB8172 /* InsertionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertionState.h; sourceTree = "<group>"; };
+		2E1183C215D20DD400EB8172 /* InsertionState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertionState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,14 @@
 			isa = PBXGroup;
 			children = (
 				2E1183AD15D20B2700EB8172 /* main.m */,
+				2E1183B815D20B6100EB8172 /* State.h */,
+				2E1183BB15D20D9000EB8172 /* DeletionState.h */,
+				2E1183BE15D20DBA00EB8172 /* MatchState.h */,
+				2E1183C115D20DD400EB8172 /* InsertionState.h */,
+				2E1183B915D20B6100EB8172 /* State.m */,
+				2E1183BC15D20D9000EB8172 /* DeletionState.m */,
+				2E1183BF15D20DBA00EB8172 /* MatchState.m */,
+				2E1183C215D20DD400EB8172 /* InsertionState.m */,
 				2E1183B115D20B2700EB8172 /* Lab05.1 */,
 				2E1183AF15D20B2700EB8172 /* Supporting Files */,
 			);
@@ -139,6 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E1183AE15D20B2700EB8172 /* main.m in Sources */,
+				2E1183BA15D20B6100EB8172 /* State.m in Sources */,
+				2E1183BD15D20D9000EB8172 /* DeletionState.m in Sources */,
+				2E1183C015D20DBB00EB8172 /* MatchState.m in Sources */,
+				2E1183C315D20DD400EB8172 /* InsertionState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
