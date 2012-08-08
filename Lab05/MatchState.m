@@ -18,35 +18,33 @@
         probC = C;
         probG = G;
         probT = T;
-        
-        transition1 = nil;
-        transition2 = nil;
-        transition3 = nil;
     }
     return self;
 }
 
--(void) setStateType:(stateType)theType
+-(State *) run
 {
-    type = theType;
-}
-
--(void) setTransition1:(State *)state prob:(double)prob
-{
-    transition1 = state;
-    transProb1 = prob;
-}
-
--(void) setTransition2:(State *)state prob:(double)prob
-{
-    transition1 = state;
-    transProb1 = prob;
-}
-
--(void) setTransition3:(State *)state prob:(double)prob
-{
-    transition1 = state;
-    transProb1 = prob;
+    double unifRand = (double) arc4random_uniform(RAND_MAX) / RAND_MAX;
+    //NSLog(@"letterRand: %f", unifRand);
+    if (unifRand <= probA) {
+        printf("A");
+    } else if (unifRand <= probC) {
+        printf("C");
+    } else if (unifRand <= probG) {
+        printf("G");
+    } else {
+        printf("T");
+    }
+    if (unifRand <= transProb3) {
+        //NSLog(@"transition3");
+        return transition3;
+    } else if (unifRand <= (transProb3 + transProb2)) {
+        //NSLog(@"transition2");
+        return transition2;
+    } else {
+        //SLog(@"transition1");
+        return transition1;
+    }
 }
 
 @end
